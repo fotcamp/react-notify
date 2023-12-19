@@ -1,0 +1,29 @@
+{
+  "name": "monorepo-template",
+  "version": "1.0.0",
+  "description": "Build monorepo using yarn workspace",
+  "repository": "https://github.com/fotcamp/react-notify",
+  "author": "seungdeok",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "shared-styles": "yarn workspace @shared/styles run build",
+    "shared-utils": "yarn workspace @shared/utils run build",
+    "shared-validators": "yarn workspace @shared/validators run build",
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache .",
+    "test": "yarn workspace pack-a run test",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0"
+  }
+}

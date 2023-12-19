@@ -1,0 +1,16 @@
+node_modules
+
+# dist folder
+dist
+
+# Typescript incremental build info
+tsconfig.tsbuildinfo
+
+# ESLint cache file
+.eslintcache
+
+# macOS DSStore
+.DS_Store
+
+# msw Service Worker
+mockServiceWorker.js
