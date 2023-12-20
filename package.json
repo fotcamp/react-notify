@@ -27,7 +27,7 @@
     "shared-validators": "yarn workspace @shared/validators run build",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "test": "yarn workspace pack-a run test",
+    "test": "yarn workspace react-toast run test && yarn workspace react-snackbar run test && yarn workspace react-dialog run test",
     "prepare": "husky install"
   },
   "devDependencies": {
