@@ -1,9 +1,20 @@
 {
-  "name": "monorepo-template",
+  "name": "react-popup-craft",
   "version": "1.0.0",
   "description": "Build monorepo using yarn workspace",
-  "repository": "https://github.com/fotcamp/react-notify",
-  "author": "seungdeok",
+  "repository": "https://github.com/fotcamp/react-popup-craft",
+  "contributors": [
+    {
+      "name": "@seungdeok",
+      "email": "jeong9132@gmail.com",
+      "url": "https://github.com/seungdeok"
+    },
+    {
+      "name": "@widse",
+      "email": "sohnjuhyeong727@gmail.com",
+      "url": "https://github.com/widse"
+    }
+  ],
   "private": true,
   "workspaces": {
     "packages": [
