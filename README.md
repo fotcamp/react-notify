@@ -1,3 +1,3 @@
-## react-notify
+## react-popup-craft
 
 Build Toast, Dialog, Snackbar using React
