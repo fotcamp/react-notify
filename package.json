@@ -16,18 +16,16 @@
     }
   ],
   "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/**"
-    ]
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "shared-styles": "yarn workspace @shared/styles run build",
     "shared-utils": "yarn workspace @shared/utils run build",
     "shared-validators": "yarn workspace @shared/validators run build",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
-    "test": "yarn workspace react-toast run test && yarn workspace react-snackbar run test && yarn workspace react-dialog run test",
+    "storybook": "yarn workspace react-popup-craft run storybook",
     "prepare": "husky install"
   },
   "devDependencies": {
