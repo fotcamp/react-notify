@@ -23,7 +23,7 @@ if [ -z "$FIRST_LINE" ]; then
         exit 1
     fi
 
-    if [[ ! "$FIRST_LINE" =~ ^$PREFIX: #${ISSUE_NUMBER} ]]; then
+    if [[ ! "$FIRST_LINE" =~ ^"$PREFIX":\ #${ISSUE_NUMBER} ]]; then
         if [[ "$PREFIX" =~ ^(fix|chore|refactor|test|feat|doc)$ ]]; then
             sed -i ".bak" "1s/^/$PREFIX: #${ISSUE_NUMBER} /" ${COMMIT_MSG_FILE}
         else
