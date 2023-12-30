@@ -29,7 +29,8 @@
     "lint-staged": "lint-staged",
     "build:core": "lerna run build --scope=@react-popup-craft/toast --scope=@react-popup-craft/dialog --scope=@react-popup-craft/snackbar",
     "build:shared": "lerna run build --scope=@shared/styles --scope=@shared/utils --scope=@shared/validators",
-    "build": "lerna run build --scope=react-popup-craft && yarn build:core && yarn build:shared"
+    "build": "lerna run build --scope=react-popup-craft && yarn build:core && yarn build:shared",
+    "preinstall": "yarn build:core"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
