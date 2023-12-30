@@ -17,17 +17,19 @@
   ],
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/core/*",
+    "packages/shared/*"
   ],
   "scripts": {
-    "shared-styles": "yarn workspace @shared/styles run build",
-    "shared-utils": "yarn workspace @shared/utils run build",
-    "shared-validators": "yarn workspace @shared/validators run build",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache .",
     "storybook": "yarn workspace react-popup-craft run storybook",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "build:core": "lerna run build --scope=@react-popup-craft/toast --scope=@react-popup-craft/dialog --scope=@react-popup-craft/snackbar",
+    "build:shared": "lerna run build --scope=@shared/styles --scope=@shared/utils --scope=@shared/validators",
+    "build": "lerna run build --scope=react-popup-craft && yarn build:core && yarn build:shared"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
