@@ -1,6 +1,6 @@
 {
   "name": "react-popup-craft",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
@@ -23,7 +23,8 @@
     "test": "react-scripts test --watchAll=false --coverage",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "preinstall": "lerna run build --scope=@react-popup-craft/toast --scope=@react-popup-craft/dialog --scope=@react-popup-craft/snackbar"
   },
   "browserslist": {
     "production": [

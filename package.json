@@ -29,8 +29,7 @@
     "lint-staged": "lint-staged",
     "build:core": "lerna run build --scope=@react-popup-craft/toast --scope=@react-popup-craft/dialog --scope=@react-popup-craft/snackbar",
     "build:shared": "lerna run build --scope=@shared/styles --scope=@shared/utils --scope=@shared/validators",
-    "build": "lerna run build --scope=react-popup-craft && yarn build:core && yarn build:shared",
-    "preinstall": "yarn build:core"
+    "build": "lerna run build --scope=react-popup-craft && yarn build:core && yarn build:shared"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
@@ -40,6 +39,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.0",
+    "lerna": "^8.0.1",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1"
   },
