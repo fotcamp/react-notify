@@ -35,7 +35,9 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.0",
-    "lint-staged": "^15.2.0"
+    "lint-staged": "^15.2.0",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
