@@ -1,6 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Toast } from './lib/Toast';
+import { TestTemplate } from './test/TestTemplate';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<Toast />);
+root.render(<TestTemplate />);
