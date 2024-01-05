@@ -2,8 +2,7 @@
   "compilerOptions": {
     /* Modules */
     "baseUrl": ".",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "paths": {},
     "resolveJsonModule": true,
 
