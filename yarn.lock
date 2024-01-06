@@ -2806,6 +2806,7 @@
 "@react-popup-craft/dialog@file:packages/core/react-dialog":
   version "1.0.1"
   dependencies:
+    "@emotion/react" "^11.11.3"
     "@testing-library/jest-dom" "^5.17.0"
     "@testing-library/react" "^13.4.0"
     "@testing-library/user-event" "^13.5.0"
